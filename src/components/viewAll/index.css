@@ -1,0 +1,100 @@
+.btn {
+    background-color: #443c8d;
+    color: #f1f1f1;
+    transition: all 0.3s ease-in;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:first-child {
+    background-color: rgba(0, 0, 255, 0.664);
+}
+
+.btn:last-child {
+    background-color: rgba(255, 0, 0, 0.637);
+}
+
+.tasksall {
+    width: 30%;
+    max-height: 70vh;
+    overflow-y: scroll;
+    margin-bottom: 2rem;
+}
+
+.task {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100%; */
+    margin: 0.5rem 0;
+    margin-bottom: 1rem;
+  
+    padding: 0.5rem;
+  
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.details {
+    width: 70%;
+    word-break: break-all;
+}
+
+.details>h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    color: #443c8d;
+}
+
+.details>p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 20%;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* width: 100%; */
+}
+.actions button{
+    width: 5vw;
+}
+
+
+@media (max-width: 480px) {
+   
+ 
+    .tasksall{
+        width: 90% !important;
+    }
+    .details{
+        width: 70%;
+    }
+    .details>p {
+        width: 100% !important;
+        color: white;
+    }
+    .details h1{
+        width: 100% !important;
+        font-size: 1rem !important;
+        
+    }
+    .actions{
+        width: 30% !important;
+    }
+    .actions button{
+        width: 18vw !important;
+    }
+   
+   
+  
+  }

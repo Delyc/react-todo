@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+ 
+
+
+}
+.nav{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  color: #443c8d;
+  z-index: 100;
+  
+}
+.foter{
+  position: relative;
+  top: 15rem;
+  padding: 2rem;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  
+}
+.foter img{
+  width: 1.5vw;
+  height: 3vh;
+}
+.social{
+  
+  gap: 0.2rem;
+  display: flex;
+  align-items: center;
+}
+.link{
+  width: 1.3vw !important;
+  height: 2.5vh !important;
+}
+.git{
+  width: 1.3vw !important;
+  height: 2.5vh !important;
+}
+.website{
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  background-color: #443c8d;
+  color: #f1f1f1;
+  transition: all 0.3s ease-in;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #c1bddf;
+  cursor: default;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+input, textarea {
+  background-color: #f1f1f1;
+  opacity: 0.8;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #443c8d;
+  font-size: 1.1rem;
+  resize: none;
+}
+
+input:active, input:focus, textarea:active, textarea:focus {
+  opacity: 1;
+  outline: 1px solid #443c8d;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.view {
+  position: relative;
+  top: 10rem;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+
+}
+
+:root {
+  --toastify-color-light: #fff;
+  --toastify-color-dark: #121212;
+  --toastify-color-info: #3498db;
+  --toastify-color-success: #07bc0c;
+  --toastify-color-warning: #f1c40f;
+  --toastify-color-error: #f40101;
+}
+
+
+@media (max-width: 480px) {
+  .view{
+    display: flex;
+    flex-direction: column;
+    top: 0 !important;
+    padding: 1rem;
+  
+  
+    z-index: -10 !important;
+  }
+  .create form{
+    width: 90% !important;
+  }
+  .task{
+    width: 100 !important;
+  }
+  .nav{
+    z-index: 100 !important;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid white;
+
+  }
+  body{
+     background-color: black;
+
+  }
+ 
+
+}
