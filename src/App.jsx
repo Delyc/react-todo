@@ -7,7 +7,7 @@ import { ToastContainer } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 import { Nav } from "./components/nav/Nav";
-import Footer from "./components/footer/Footer";
+
 
 function App() {
   const [wasSuccessful, setWasSuccessful] = useState(false);
